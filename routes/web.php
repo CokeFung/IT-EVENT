@@ -22,6 +22,7 @@ Route::post('profile', 'UserController@update_avatar');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/joined-event', 'HomeController@joinedEvent')->name('joined-event');
 Route::get('/create-event', 'HomeController@createEvent')->name('create-event');
 Route::get('/my-event', 'HomeController@myEvent')->name('my-event');
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
@@ -31,7 +32,7 @@ Route::post('delete-event', 'HomeController@deleteEvent')->name('delete-event');
 Route::post('check-event', 'HomeController@checkEvent')->name('check-event');
 Route::post('join-event', 'HomeController@joinEvent')->name('join-event');
 Route::post('create-event', 'EventController@createEvent');
-
+Route::post('leave-event', 'HomeController@leaveEvent')->name('leave-event');
 
 Route::post('admin-edit-event', 'AdminController@admineditEvent')->name('admin-edit-event');
 Route::post('admin-delete-event', 'AdminController@admindeleteEvent')->name('admin-delete-event');

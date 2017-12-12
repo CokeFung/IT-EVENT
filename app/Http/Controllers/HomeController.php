@@ -126,4 +126,24 @@ class HomeController extends Controller
                                   ->with('member1', $alluser)
                                   ->with('inevent1', $isinevent);
     }
+
+    public function joinedEvent(){
+        $user = Auth::user();
+        $allevent = DB::table('eventmembers')->where('member_id', $user->id)->get();
+        $allevent = $allevent->pluck('event_id');
+        $joinedevent = DB::table('events')->whereIn('id', $allevent)->get();
+
+        return view('joined_event')->with('ownevents', $joinedevent);
+    }
+
+    public function leaveEvent(Request $request){
+        DB::table('eventmembers')->where('event_id', $request->event_id)->where('member_id', $request->member_id)->delete();
+
+        $user = Auth::user();
+        $allevent = DB::table('eventmembers')->where('member_id', $user->id)->get();
+        $allevent = $allevent->pluck('event_id');
+        $joinedevent = DB::table('events')->whereIn('id', $allevent)->get();
+
+        return view('joined_event')->with('ownevents', $joinedevent);
+    }
 }
