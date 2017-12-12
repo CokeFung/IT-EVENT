@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/create-event', 'HomeController@createEvent')->name('create-event');
 Route::get('/my-event', 'HomeController@myEvent')->name('my-event');
 Route::get('/users/logout', 'Auth\LoginController@userLogout')->name('user.logout');
-Route::post('edit-event', 'HomeController@editEvent')->name('edit-event');
+Route::post('edit-my-event', 'HomeController@editEvent')->name('edit-my-event');
 Route::post('owner-edit-event', 'HomeController@ownerEditEvent')->name('owner-edit-event');
 Route::post('delete-event', 'HomeController@deleteEvent')->name('delete-event');
 Route::post('check-event', 'HomeController@checkEvent')->name('check-event');

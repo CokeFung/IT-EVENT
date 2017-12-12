@@ -45,8 +45,10 @@ class HomeController extends Controller
         return view('create_event', array('user' => Auth::user()));
     }
 
-    public function editEvent(Request $request){
+    public function editEvent(Request $request) {
+
         $findevent = DB::table('events')->where('id', $request->event_id)->get();
+
         return view('editevent')->with('myevent', $findevent);
     }
 

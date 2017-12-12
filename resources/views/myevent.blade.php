@@ -29,7 +29,7 @@
                 {{ $event->event_name}}
             </h4>
             
-            <form action="{{ route('edit-event') }}" method="post" enctype="multipart/form-data" class="d-inline-block">
+            <form action="{{ route('edit-my-event') }}" method="post" enctype="multipart/form-data" class="d-inline-block">
                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                 <input name="event_id" type="hidden" value="{{ $event->id }}"/>
                 <button type="submit" class="btn-submit" style="width: 30px;">
@@ -76,7 +76,7 @@
                 {{ $event->event_name}}
             </h4>
             
-            <form action="{{ route('edit-event') }}" method="post" enctype="multipart/form-data" class="d-inline-block">
+            <form action="{{ route('edit-my-event') }}" method="post" enctype="multipart/form-data" class="d-inline-block">
                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                 <input name="event_id" type="hidden" value="{{ $event->id }}"/>
                 <button type="submit" class="btn-submit" style="width: 30px;">
