@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>E-Ticket</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url('css/main.css') }}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div>
+      <div class="pageframe">
+        <div class="side-navbar-dsktop">
+          <div class="container">
+            <div class="row">
+              <div class='col-md-12 text-center'>
+                @guest
+                <img src="/uploads/avatar/default.jpg" alt="" class="user-image img-fluid">
+                @else
+                <img src="./uploads/avatar/{{ Auth::user()->avatar }}" alt="" class="user-image img-fluid">
+                @endguest
+              </div>
+            </div>
+            <div class="container">
+              <div class="user-panel justify-content-center">
+                @guest
+                <h3 class="user-panel-name" style="text-align: center;">Guest</h3><br>
+                <p class="user-panel-1"><a href="{{ route('login') }}"><i class="fa fa-user-o"> Login</i></a></p>
+                <p class="user-panel-2"><a href="{{ route('register') }}"><i class="fa fa-star"> Register</i></a></p>
+                @else
+                <h3 class="user-panel-name">{{ Auth::user()->name }}</h3><br>
+                <p class="user-panel-1"><a href="{{ url('/home') }}"><i class="fa fa-user-o"> Home</i></a></p>
+                <p class="user-panel-2"><a href="{{ url('/profile') }}"><i class="fa fa-user-o"> My Profile</i></a></p>
+                <p class="user-panel-3"><a href="{{ url('/my-event')}}"><i class="fa fa-star"> My Event</i></a></p>
+                <p class="user-panel-4"><a href="{{ url('/create-event') }}"><i class="fa fa-star"> Create event</i></a></p>
+                <p class="user-panel-5"><a href="{{ url('/users/logout') }}"><i class="fa fa-sign-out"> Log out</i></a></p>
+                @endguest
+              </div>
+            </div>
+          </div>
+        </div>
+          @yield('navv')
+      </div>
+          <nav class="frame-navbar navbar mbile">
+            <div class="container-fluid">
+              <div class="option justify-content-end">
+                <h2>
+                  <a href="#" class="side-nav-toggle" data-toggle="collapse" data-target='#user-collapse'>
+                    <i class="fa fa-bars" id="option-icon"></i>
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </nav>
+      </div>
+      <div>
+        <section class="row card-control justify-content-center">
+            <div class="collapse col-sm-12" id="user-collapse">
+                <div class="row">
+                  <div class='col-md-12 text-center'>
+                    @guest
+                    <img src="/uploads/avatar/default.jpg" alt="" class="user-image img-fluid">
+                    @else
+                    <img src="./uploads/avatar/{{ Auth::user()->avatar }}" alt="" class="user-image img-fluid">
+                    @endguest
+                  </div>
+                </div>
+                <div class="user-panel text-center">
+                    @guest
+                    <h4 class="user-panel-name" style="text-align: center;">Guest</h4><br>
+                    <p class="user-panel-1"><a href="{{ route('login') }}"><i class="fa fa-user-o"> Login</i></a></p>
+                    <p class="user-panel-2"><a href="{{ route('register') }}"><i class="fa fa-star"> Register</i></a></p>
+                    @else
+                    <h3 class="user-panel-name">{{ Auth::user()->name }}</h3><br>
+                    <p class="user-panel-1"><a href="{{ url('/home') }}"><i class="fa fa-user-o"> Home</i></a></p>
+                    <p class="user-panel-2"><a href="{{ url('/profile') }}"><i class="fa fa-user-o"> My Profile</i></a></p>
+                    <p class="user-panel-3"><a href="{{ url('/my-event')}}"><i class="fa fa-star"> My Event</i></a></p>
+                    <p class="user-panel-4"><a href="{{ url('/create-event')}}"><i class="fa fa-star"> Create event</i></a></p>
+                    <p class="user-panel-5"><a href="{{ url('/users/logout') }}"><i class="fa fa-sign-out"> Log out</i></a></p>
+                    @endguest
+                </div>
+            </div>
+            @yield('content')
+        </section>
+      </div>
+    <!-- Optional JavaScript -->
+    <script>
+      function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+      
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/81c2cd76b6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

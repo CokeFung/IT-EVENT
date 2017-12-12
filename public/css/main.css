@@ -1,0 +1,555 @@
+#user-collpse{
+    background-color: black;
+}
+ul{
+    list-style: none;
+}
+textarea{
+    color: white;
+    background-color: transparent;
+    width: 45vw;
+    border: 2px solid white;
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+}
+textarea:focus{
+    outline: none !important;
+}
+
+#datetime{
+    color: white;
+    background-color: #CF6766;
+    width: 20vw;
+    border: 2px solid #CF6766;
+    min-width: 270px;
+    font-size: 20px;
+}
+#datetime:focus{
+    outline:none !important;
+}
+#datetime:hover{
+    border-color:white
+}
+
+.logo:hover {
+    text-decoration: none;  
+}
+.logo:visited{
+    text-decoration: none;
+}
+.logo:link{
+    text-decoration: none;
+}
+.logo:active{
+    text-decoration: none;
+}
+
+/*input button*/
+::-ms-browse {
+  background: white;
+  color: #CF6766;
+  border: 1px solid white;
+}
+::-ms-browse:focus{
+  outline: none !important;
+}
+::-ms-browse:hover{
+  outline: none !important;
+  color: white;
+  background-color: #CF6766;
+  border: 1px solid #CF6766;
+  border-color: white;
+}
+
+::-webkit-file-upload-button {
+  background: white;
+  color: #CF6766;
+  border: 1px solid white;
+}
+::-webkit-file-upload-button:focus{
+  outline: none !important;
+}
+::-webkit-file-upload-button:hover{
+  outline: none !important;
+  color: white;
+  background-color:  #CF6766;
+  border: 1px solid #CF6766;
+  border-color: white;
+}
+/*-----------*/
+
+.links > a {
+    color: white;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.alink:hover{
+    color: #CF6766;
+}
+
+.user-image{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.user-panel{
+    font-size: 1.25vw;
+}
+.main-event-name{
+    text-align: center;
+}
+.user-panel-name{
+    font-size: 1.75vw;
+    color: azure;
+    text-align: center;
+    margin-left: -14%;
+    margin-right: 4%;
+}
+
+.user-panel-1, .user-panel-2, .user-panel-3{
+    margin-top: 15px;
+    margin-right: 15px;
+    color: grey;
+    display: block;
+}
+.alert{
+    display: none;
+}
+.card{
+    margin-left: 30px;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 5px solid white;
+}
+.card:hover{
+    border: 5px solid #8EAEBD;
+    background-color: #8EAEBD;
+}
+.img-card{
+    width: 310px;
+    height: 180px;
+    border-bottom: 5px solid white;
+}
+
+#menu-item-1{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+#menu-item-4{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.card-img-top{
+    width: 200px;
+    height: 125px;
+    margin-top: 20px;
+    margin-left: 20px
+}
+.card-body{
+    text-align: center;
+    color: black;
+}
+.main-event{
+    width: 80vw;
+}
+
+.form-input-login{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: transparent;
+    color: white;
+    width: 30vw;
+    min-width: 200px;
+    text-align: center;
+}
+.form-input-login:focus{
+    outline: none;
+    -webkit-autofill: none;
+}
+.form-create-event-name{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    background-color: transparent;
+    color: white;
+    width: 45vw;
+    min-width: 200px;
+    text-align: center;
+}
+.form-create-event-name:focus{
+    outline: none;
+    -webkit-autofill: none;
+}
+select{
+    border:2px solid #CF6766;
+    background-color: #CF6766;
+    color: white;
+    width: 45vw;
+    min-width: 200px;
+    text-align: center;
+    outline: none;
+}
+select:hover{
+    border-color: white;
+}
+select:focus{
+    outline: none !important;
+}
+
+.page-con-delete{
+    position: absolute;
+    background-color:rgba(255, 255, 255, 0.85);
+    width: 310px;
+    height: 320px;
+    display: none;
+    padding-top: 100px;
+    color: #B80F0A;
+}
+
+.text-title-form{
+    background-color: transparent;
+    color: white;
+    width: 45vW;
+    min-width: 200px;
+    text-align: left;
+
+}
+
+.btn-submit{
+    border-width: 0;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: #CF6766;
+    width: 30vw;
+    min-width: 200px;
+    height: 40px;
+    padding-top: 5px;
+}
+.btn-submit:hover{
+    border: 2px solid white;
+}
+.btn-submit:focus{
+    outline: none !important;
+}
+
+.btn-con-delete{
+    padding-top: 12px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right:5px;
+    width: 100px;
+}
+.btn-con-delete:focus{
+    outline: none !important;
+}
+
+.btn-delete{
+    border-width: 0;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: #B80F0A;
+    width: 40px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+
+.btn-delete:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: #B80F0A;
+}
+.btn-delete:focus{
+    outline: none !important;
+}
+
+.btn-n-outline:focus{
+    outline: none !important;
+}
+
+.menu{
+    width: 100%;
+}
+.main-page-menu{
+    width: 100vw;
+    display: block;
+    position: fixed;
+    background-color: #555;
+}
+
+.main-page-button:hover {
+    background-color: #777;
+}
+
+.main-page-button:focus {
+    outline: none !important;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    min-width: 98vw;
+    min-height: 100vh;
+    position: relative;
+    border:none;
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+}
+.tabcontent{
+    display: none;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: white;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+
+@media (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
+    .side-navbar{
+        width: 15%;
+        background-color: #031424;
+        display: inline-block;
+        margin: 0 0 0 0;
+        padding: 4px;
+        position: relative;
+        float: left;
+        color: white;
+    }
+    .main{
+        width: 85%;
+        background-color: #30415D;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        color: white;
+        border: none;
+    }
+    .side-navbar-user-image img{
+        border-radius: 100%;
+        width: 80%;
+        height: auto;
+    }
+    .side-navbar-user-image{
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+    }
+    .side-navbar-name{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #CF6766;
+        text-align: center;
+    }
+    .side-navbar-name h1{
+        font-size: 250%;
+    }
+    .side-navbar-menu{
+        text-align: left;
+        font-size: 110%;
+        margin-left: 15%;
+        color: white;
+    }
+    .side-navbar-menu a{
+        color: white;
+    }
+    .side-navbar-menu br{
+        margin-bottom: 5%;
+    }
+    .side-navbar-menu a:hover{
+        color: #8EAEBD;
+        text-decoration: none;
+    }
+    .main-pageselector{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .tablink{
+        background-color: #8EAEBD;
+        color: black;
+        float: left;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+    .tablink:hover{
+        background-color: #031424;
+        color: azure;
+    }
+    .tabcontent {
+        color: white;
+        padding: 100px 20px;
+        height: 100%;
+        background-color: #30415D;
+      }
+    .tab-ovf{
+          overflow-wrap: break-word;
+    }
+    .column-container{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow-x: hidden;
+    }
+    .column-container column{
+        flex: -1;
+    }
+    .img-in-event{
+        width: 500px;
+        height: 300px;
+        border: 5px solid white;
+        margin-bottom: 50px;
+    }
+    .content-event-page{
+        width: 50vw;
+    }
+    .main-event-footer img{
+        height: 35px;
+        text-align: left;
+        background-color: red;
+        border-radius: 50%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+      #Home {background-color: #30415D;}
+      #News {background-color: #30415D;}
+      #Contact {background-color: #30415D;}
+      #About {background-color: #30415D;}
+}
+
+
+@media (max-width: 1024px){
+    .text-title-form{
+        text-align: center;
+    }
+    .dsktop{
+        display: none;
+    }
+    .head-navbar{
+        width: 100%;
+        display: block;
+        min-height: 10%;
+        background-color: #031424;
+        font-size: 200%;
+    }
+    .head-navbar a{
+        color: #30415D;
+        text-decoration: none;
+        margin-left: 5%;
+    }
+    .head-navbar a:hover{
+        color: #8EAEBD;
+    }
+    .main-content-mobile{
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #30415D;
+        padding: 50px 0 50px 0;
+    }
+    .content{
+        height:100vh;
+    }
+    .main-content-mobile-menu {
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111; 
+        overflow-x: hidden; 
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+    .main-content-mobile-menu img{
+        border-radius: 100%;
+        margin-left: 20%;
+    }
+    /* The navigation menu links */
+    .main-content-mobile-menu a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 100%;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        margin-left: 20%;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .main-content-mobile-menu a:hover {
+        color: #f1f1f1;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .main-content-mobile-menu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    .tablink{
+        background-color: #8EAEBD;
+        color: black;
+        float: left;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+        font-size: 12px;
+    }
+    .tabcontent {
+        color: white;
+        padding: 100px 20px;
+        height: 100%;
+    }
+    .img-in-event{
+        width: 80vw;
+        border: 5px solid white;
+        margin-bottom: 50px;
+    }
+    .content-event-page{
+        width: 60vw;
+    }
+    .main-event-footer img{
+        height: 35px;
+        text-align: left;
+        background-color: red;
+        border-radius: 50%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+
