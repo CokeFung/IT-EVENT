@@ -19,7 +19,7 @@
         <!--left of screen desktop site-->
         <div class="side-navbar dsktop column">
           <!--Logo or Event name-->
-          <a href="{{ url('/home') }}" style="text-decoration: none;">
+          <a href="{{ url('/') }}" style="text-decoration: none;">
           <div class="side-navbar-name" style="color: white;">
             <h1>IT EVENT</h1>
           </div>
