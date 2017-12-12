@@ -56,7 +56,7 @@
     </div>
 @endsection
 @section('navv')
-    <H1 class="text-center" style="margin: 0px 0 75px 0; padding-top: 50px;">ADMIN Login</H1>
+    <H1 class="text-center" style="margin: 50px 0 75px 0; padding-top: 50px;">ADMIN Login</H1>
 
     <center>
         <form method="POST" action="{{ route('admin.login.submit') }}">

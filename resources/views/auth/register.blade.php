@@ -79,7 +79,7 @@
 
 @section('navv')
 
-                    <H1 class="text-center" style="margin: 0px 0 75px 0;">Register</H1>
+                    <H1 class="text-center" style="margin: 50px 0 75px 0;">Register</H1>
 
                     <center>
                     <form method="POST" action="{{ route('register') }}">
