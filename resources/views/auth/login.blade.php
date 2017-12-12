@@ -43,13 +43,15 @@
                 <button type="submit" class="btn-submit">
                     <h5>Login</h5>
                 </button>
+                <!--
                 <div class="form-input-login" style="text-align: right; margin-top: 5px;">
                 <p><br>
                     <a class="" href="{{ route('password.request') }}" style="color: white;">
                         Forgot Your Password?
                     </a>
                 </p>
-                </div>         
+                </div>   
+                -->      
             </div>
         </form>
     </center>
@@ -96,13 +98,15 @@
                 <button type="submit" class="btn-submit">
                     <h5>Login</h5>
                 </button>
+                <!--
                 <div class="form-input-login" style="text-align: right; margin-top: 5px;">
                 <p><br>
                     <a class="" href="{{ route('password.request') }}" style="color: white;">
                         Forgot Your Password?
                     </a>
                 </p>
-                </div>         
+                </div>
+                -->         
             </div>
         </form>
     </center>
