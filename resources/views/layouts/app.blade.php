@@ -43,7 +43,7 @@
                 <p class="user-panel-1"><a href="{{ url('/home') }}"><i class="fa fa-home"> Home</i></a></p>
                 <p class="user-panel-2"><a href="{{ url('/profile') }}"><i class="fa fa-user-circle-o"> My Profile</i></a></p>
                 <p class="user-panel-3"><a href="{{ url('/my-event')}}"><i class="fa fa-star"> My Event</i></a></p>
-                <p class="user-panel-3"><a href="{{ url('/joined-event')}}"><i class="fa fa-star"> Joined event</i></a></p>
+                <p class="user-panel-3"><a href="{{ url('/joined-event')}}"><i class="fa fa-ticket"> Joined event</i></a></p>
                 <p class="user-panel-4"><a href="{{ url('/create-event') }}"><i class="fa fa-paint-brush"> Create event</i></a></p>
                 <p class="user-panel-5"><a href="{{ url('/users/logout') }}"><i class="fa fa-sign-out"> Log out</i></a></p>
                 @endguest
@@ -73,6 +73,7 @@
                 <a href="{{ url('/home') }}"><i class="fa fa-home"> Home</i></a>
                 <a href="{{ url('/profile') }}"><i class="fa fa-user-circle-o"> My Profile</i></a>
                 <a href="{{ url('/my-event')}}"><i class="fa fa-star"> My Event</i></a>
+                <a href="{{ url('/joined-event')}}"><i class="fa fa-ticket"> Joined event</i></a>
                 <a href="{{ url('/create-event') }}"><i class="fa fa-paint-brush"> Create event</i></a>
                 <a href="{{ url('/users/logout') }}"><i class="fa fa-sign-out"> Log out</i></a>
                 @endguest
